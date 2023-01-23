@@ -1,3 +1,5 @@
+## This fork refreshes the original script so that it runs on python3 and replaces the pyexiv2 which had been known to be problematic on some prominent OS's (Windows and some versions of MacOS) because of the c++ extension requirement.
+
 # Convert images to be compatible with Polaroid Z2300 #
 
 http://www.amazon.com/Polaroid-Z2300-Digital-Instant-Camera/dp/B008GVXL1A
@@ -10,7 +12,10 @@ This script will convert all images in the current working directory into a form
 
 **Requirements**:
 
-Python and Python Imaging Library.
+Python and Python Imaging Library and piexif
+```
+python -m pip install pillow piexif
+```
 
 **Usage**:
 
